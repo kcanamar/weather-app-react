@@ -1,23 +1,23 @@
 const weatherData = [
     {
         img: "http://res.cloudinary.com/jkeohan/image/upload/v1535732381/'day'.svg",
-        conditions: "sunny",
+        condition: "sunny",
         time: "day"
     },{
         img: "http://res.cloudinary.com/jkeohan/image/upload/v1535732381/night.svg",
-        conditions: "clear",
+        condition: "clear",
         time: "day"
     },{
         img: "http://res.cloudinary.com/jkeohan/image/upload/v1535732381/stormy.svg",
-        conditions: "clear",
+        condition: "clear",
         time: "day"
     },{
         img: "http://res.cloudinary.com/jkeohan/image/upload/v1535732381/cloudy-'day'_t7ckxp.svg",
-        conditions: "partly sunny",
+        condition: "partly sunny",
         time: "night"
     },{
         img: 'http://res.cloudinary.com/jkeohan/image/upload/v1535732381/cloudy-night.svg',
-        conditions: "clear",
+        condition: "clear",
         time: "day"
     }
 ]

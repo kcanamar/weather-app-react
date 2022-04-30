@@ -4,10 +4,13 @@ import weatherData from "./weatherData";
 import WeatherForcast from "./WeatherForcast"
 
 export default function App() {
-  console.log(weatherData)
+  const allWeatherData = weatherData.map((ele, index) => {
+    return <WeatherForcast img={ele.img} condition={ele.condition} time={ele.time} key={index}/>
+  })
+
   return (
     <div className="App">
-      <h1>My WeatherIcons App</h1> 
+      {allWeatherData}
     </div>
   );
 }
