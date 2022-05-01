@@ -5,7 +5,14 @@ import WeatherForcast from "./components/WeatherForcast"
 
 export default function App() {
   const allWeatherData = weatherData.map((ele, index) => {
-    return <WeatherForcast img={ele.img} conditions={ele.conditions} time={ele.time} key={index}/>
+    return (
+    <WeatherForcast 
+      {...ele}
+      // img={ele.img} 
+      // conditions={ele.conditions} 
+      // time={ele.time} 
+      key={index}
+      />)
   })
 
   return (
