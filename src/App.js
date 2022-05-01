@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles.css";
 import weatherData from "./weatherData";
-import WeatherForcast from "./WeatherForcast"
+import WeatherForcast from "./components/WeatherForcast"
 
 export default function App() {
   const allWeatherData = weatherData.map((ele, index) => {
-    return <WeatherForcast img={ele.img} condition={ele.condition} time={ele.time} key={index}/>
+    return <WeatherForcast img={ele.img} conditions={ele.conditions} time={ele.time} key={index}/>
   })
 
   return (
